@@ -17,7 +17,17 @@ repositories {
 	maven("https://maven.glass-launcher.net/snapshots/")
 	maven("https://maven.glass-launcher.net/releases/")
 	maven("https://maven.glass-launcher.net/babric")
+	maven("https://maven.minecraftforge.net/")
+	maven("https://jitpack.io/")
 	mavenCentral()
+	exclusiveContent {
+		forRepository {
+			maven("https://api.modrinth.com/maven")
+		}
+		filter {
+			includeGroup("maven.modrinth")
+		}
+	}
 }
 
 dependencies {
