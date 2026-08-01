@@ -12,6 +12,7 @@
   },
 
   "license": "MIT",
+  "accessWidener": "memorysweep.accesswidener",
 
   "environment": "*",
   "entrypoints": {
