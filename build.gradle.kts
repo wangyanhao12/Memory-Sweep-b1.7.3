@@ -13,6 +13,10 @@ base.archivesName = project.properties["archives_base_name"] as String
 version = project.properties["mod_version"] as String
 group = project.properties["maven_group"] as String
 
+loom {
+	accessWidenerPath = file("src/main/resources/memorysweep.accesswidener")
+}
+
 repositories {
 	maven("https://maven.glass-launcher.net/snapshots/")
 	maven("https://maven.glass-launcher.net/releases/")
